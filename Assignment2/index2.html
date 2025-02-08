@@ -1,8 +1,8 @@
 <!--
 Author: Justin Wheeler (100982020)
 Completion Date: 2025-02-07
-Purpose: To demonstrate the fundamentals of HTML Video and Audio.
-File: index.html
+Purpose: To demonstrate the fundamentals of HTML Tables.
+File: index2.html
 -->
 
 <!DOCTYPE html>
@@ -19,9 +19,9 @@ File: index.html
       <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
       <thead>
         <tr>
-          <th rowspan="2"></th>
+          <th rowspan="2", colspan="2"></th>
           <th>Name</th>
-          <th>Mass (10<sup>24</sup>kg</th>
+          <th>Mass (10<sup>24</sup>kg)</th>
           <th>Diameter (km)</th>
           <th>Density (kg/m<sup>3</sup>)</th>
           <th>Gravity (m/s<sup>2</sup>)</th>
@@ -34,7 +34,7 @@ File: index.html
       </thead>
       <tbody>
         <tr>
-          <th rowspan="4">Terrestrial planets</th>
+          <th rowspan="4", colspan="2">Terrestrial Planets</th>
           <th>Mercury</th>
           <td>0.330</td>
           <td>4.879</td>
@@ -68,7 +68,7 @@ File: index.html
           <td>149.6</td>
           <td>15</td>
           <td>1</td>
-          <td>Our world</td>
+          <td>Our World</td>
         </tr>
         <tr>
           <th>Mars</th>
@@ -80,7 +80,21 @@ File: index.html
           <td>227.9</td>
           <td>-65</td>
           <td>2</td>
-          <td>The red planet</td>
+          <td>The Red Planet</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Jovian Planets</th>
+          <th rowspan="2">Gas Giants</th>
+          <th>Jupiter</th>
+          <td>1.898</td>
+          <td>142.984</td>
+          <td>1.326</td>
+          <td>23.1</td>
+          <td>9.9</td>
+          <td>778.6</td>
+          <td>-110</td>
+          <td>67</td>
+          <td>The Largest Planet</td>
         </tr>
       </tbody>
     </table>
