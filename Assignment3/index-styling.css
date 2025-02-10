@@ -1,0 +1,35 @@
+/*
+Author: Justin Wheeler (100982020)
+Completion Date: 2025-02-07
+Purpose: To demonstrate the fundamentals of HTML Video and Audio.
+File: index.html
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+h1 {
+    color: #375e97;
+    font-size: 2em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    border-bottom: 1px solid #375e97;
+}
+  
+h2 {
+    font-size: 1.5em;
+}
+  
+.job-title {
+    color: #999999;
+    font-weight: bold;
+}
+  
+a:link,
+a:visited {
+    color: #fb6542;
+}
+  
+a:hover {
+    text-decoration: none;
+}
