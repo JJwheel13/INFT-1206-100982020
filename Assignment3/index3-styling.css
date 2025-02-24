@@ -5,48 +5,74 @@ Purpose: To demonstrate the fundamentals of CSS.
 File: index3-styling.css
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap')
+
 /* General setup */
 
 * {
     box-sizing: border-box;
-  }
+}
   
-  body {
+body {
     margin: 0 auto;
     min-width: 1000px;
     max-width: 1400px;
-  }
+}
   
-  /* Layout */
+/* Layout */
   
-  section {
+section {
     float: left;
     width: 50%;
-  }
+}
   
-  aside {
+aside {
     float: left;
     width: 30%;
-  }
+}
   
-  nav {
+nav {
     float: left;
     width: 20%;
-  }
+}
   
-  footer {
+footer {
     clear: both;
-  }
+}
   
-  header, section, aside, nav, footer {
+header, section, aside, nav, footer {
     padding: 20px;
-  }
+}
   
-  /* header and footer */
+/* header and footer */
   
-  header, footer {
+header, footer {
     border-top: 5px solid #a66;
     border-bottom: 5px solid #a66;
-  }
+}
   
-  /* WRITE YOUR CODE BELOW HERE */
+html {
+    font-size: 10px
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.6px;
+    word-spacing: 3px;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 64px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h1,h2 {
+    letter-spacing: 64px;
+    font-family: 'Roboto', sans-serif;
+}  
