@@ -10,17 +10,24 @@ html {
 }
   
 div {
+    /* Declare Size */
     width: 200px;
     height: 200px;
+    /* Declare display & alignment */
     display: flex;
     justify-content: center;
     align-items: center;
+    /* Declare text-size */
     font-size: 18px;
+    /* Declare colours */
     background-color: rgb(125, 0, 125);
     color: white;
+    /* Declare shadows */
     text-shadow: 1px 1px 2px black;
+    /* Declare border & position */
     border: 1px solid rgb(90, 0, 90);
     position: relative;
+    /* Declare color gradients & alternative shadows */
     background-image: linear-gradient(to bottom right, rgba(0,0,0,0) 0% rgba(0,0,0,0.2) 30%, rgba(0,0,0,0.2) 100%);
     box-shadow:
     3px 3px 10px rgba(0,0,0,0.3),
