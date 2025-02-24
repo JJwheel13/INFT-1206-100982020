@@ -6,7 +6,7 @@ File: index3-styling.css
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 /* General setup */
 
@@ -53,26 +53,26 @@ header, footer {
 }
   
 html {
-    font-size: 10px
+    font-size: 15px
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    letter-spacing: 1.6px;
-    word-spacing: 3px;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.2rem;
     line-height: 1.6;
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 4rem;
     text-align: center;
 }
 
 h2 {
-    font-size: 48px;
+    font-size: 2rem;
 }
 
 h1,h2 {
-    letter-spacing: 64px;
+    letter-spacing: 0.3rem;
     font-family: 'Roboto', sans-serif;
 }  
