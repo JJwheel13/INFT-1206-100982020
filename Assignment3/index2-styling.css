@@ -26,6 +26,7 @@ div {
     text-shadow: 1px 1px 2px black;
     /* Declare border & position */
     border: 1px solid rgb(90, 0, 90);
+    border-radius: 15px;
     position: relative;
     /* Declare color gradients & alternative shadows */
     background-image: linear-gradient(to bottom right, rgba(0,0,0,0) 0% rgba(0,0,0,0.2) 30%, rgba(0,0,0,0.2) 100%);
