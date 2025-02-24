@@ -46,6 +46,16 @@ p, h2 {
     border-radius: 0 0 1.5em 1.5em;
 }
 
+header, footer { 
+    height: 3em;
+    padding: 1em;
+}
+
+footer p { 
+    font-size: 1.5em;
+    line-height: 1.75em;
+}
+
 article { 
     height: 12em;
     background-color: rgba(0, 0, 0, 0.3)
