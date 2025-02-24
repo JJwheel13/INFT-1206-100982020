@@ -30,7 +30,7 @@ article {
     border-top: 1mm solid grey;
     border-bottom: 1mm solid grey;
     background-color: white;
-    background-size: contain, cover, cover;
+    background-size: contain, contain, 100% auto;
 }
 
 address {
