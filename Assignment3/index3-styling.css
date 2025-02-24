@@ -53,13 +53,13 @@ header, footer {
 }
   
 html {
-    font-size: 15px
+    font-size: 10px
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    letter-spacing: 0.1rem;
-    word-spacing: 0.2rem;
+    letter-spacing: 0.03rem;
+    word-spacing: 0.04rem;
     line-height: 1.6;
 }
 
@@ -75,4 +75,49 @@ h2 {
 h1,h2 {
     letter-spacing: 0.3rem;
     font-family: 'Roboto', sans-serif;
-}  
+}
+
+p, li {
+    font-size: 1.6rem;
+}
+
+p, h2 {
+    text-indent: 2rem;
+}
+
+a {
+    outline: none;
+}
+
+a[href^="https"] {
+    padding-right: 2rem;
+    background: url(https://mdn.github.io/learning-area/css/styling-text/typesetting-a-homepage-start/external-link-52.png)
+        no-repeat 100%;
+    background-size: 1.6rem 1.6rem    
+}
+
+a:link {
+    color: #a66;
+}
+
+a:active {
+    color: #D9534F;
+    font-weight: bold;
+}
+
+a:hover, a:focus {
+    color: #a11d1d;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #7a7635
+}
+
+section li, aside li {
+    list-style-type: none;
+    padding-left: 2.2rem;
+    background: url(https://img.icons8.com/external-becris-lineal-becris/64/000000/external-squares-mintab-for-ios-becris-lineal-becris.png)
+        no-repeat 0%;
+    background-size: 1.6rem;    
+}
