@@ -7,6 +7,16 @@ File: index2-styling.css
 
 html {
     font-family: sans-serif;
-  }
+}
   
-  /* Your CSS below here */
+div {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background-color: rgb(125, 0, 125);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
