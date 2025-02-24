@@ -5,6 +5,8 @@ Purpose: To demonstrate the fundamentals of CSS.
 File: index3-styling.css
 */
 
+/* Font setup */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
@@ -45,7 +47,7 @@ header, section, aside, nav, footer {
     padding: 20px;
 }
   
-/* header and footer */
+/* Header and Footer */
   
 header, footer {
     border-top: 5px solid #a66;
@@ -55,6 +57,8 @@ header, footer {
 html {
     font-size: 10px
 }
+
+/* Font Applications */
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -89,12 +93,16 @@ a {
     outline: none;
 }
 
+/* Define Image to Links */
+
 a[href^="https"] {
     padding-right: 2rem;
     background: url(https://mdn.github.io/learning-area/css/styling-text/typesetting-a-homepage-start/external-link-52.png)
         no-repeat 100%;
     background-size: 1.6rem 1.6rem    
 }
+
+/* Links */
 
 a:link {
     color: #a66;
@@ -114,10 +122,31 @@ a:visited {
     color: #7a7635
 }
 
+/* Lists */
+
 section li, aside li {
     list-style-type: none;
     padding-left: 2.2rem;
     background: url(https://img.icons8.com/external-becris-lineal-becris/64/000000/external-squares-mintab-for-ios-becris-lineal-becris.png)
         no-repeat 0%;
     background-size: 1.6rem;    
+}
+
+/* Navigation Bar */
+
+nav a {
+    display: block;
+    padding: 0.6rem;
+    text-decoration: none;
+    margin: 1rem 0;
+    border: 0.2rem solid #a66;
+    border-radius: 0.2rem;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+nav a:active {
+    background: #4c0827;
+    color: #f6efef;
+    border: 0.2rem solid #ad6b6b;
 }
