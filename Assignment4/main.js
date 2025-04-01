@@ -19,3 +19,31 @@ const storyText = "It was 94 fahrenheit outside, so :insertx: went for a walk. W
 const insertX = ["Willy the Goblin", "Big Daddy", "Father Christmas", "this guy"];
 const insertY = ["the soup kitchen", "Disneyland", "the White House", "Durham College"];
 const insertZ = ["spontaneously combusted", "melted into a puddle on the sidewalk", "turned into a slug and crawled away", "grew wings and flew away", "sank into the ground", "got struck by lightning"];
+
+randomize.addEventListener('click', result);
+
+function result() {
+    let newStory = storyText;
+
+    const xItem = randomValueFromArray(insertX);
+        const yItem = randomValueFromArray(insertY);
+        const zItem = randomValueFromArray(insertZ);
+
+        newStory = newStory.replaceAll(":insertx:", xItem);
+        newStory = newStory.replaceAll(":inserty:", yItem);
+        newStory = newStory.replaceAll(":insertz:", zItem);
+
+    if(customName.value !== '') {
+        const name = customName.value;
+        
+    }
+
+    if(document.getElementById("uk").checked) {
+        const weight = Math.round(300);
+        const temperature =  Math.round(94);
+
+    }
+
+    story.textContent = ;
+    story.style.visibility = 'visible';
+}
