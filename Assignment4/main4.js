@@ -1,3 +1,10 @@
+/*
+Author: Justin Wheeler (100982020)
+Completion Date: 2025-04-04
+Purpose: To demonstrate the fundamentals of Javascript
+File: main4.js
+*/
+
 // set up canvas
 
 const canvas = document.querySelector("canvas");
@@ -17,6 +24,7 @@ function random(min, max) {
 function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
+
 
 class Ball {
   constructor(x, y, velX, velY, color, size) {

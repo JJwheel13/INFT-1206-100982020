@@ -25,7 +25,9 @@ function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
+// Ball class
 class Ball {
+  // Constructor 
   constructor(x, y, velX, velY, color, size) {
     this.x = x;
     this.y = y;
@@ -35,6 +37,7 @@ class Ball {
     this.size = size;
   }
 
+  // Draw method: puts a ball object on the canvas
   draw() {
     ctx.beginPath();
     ctx.fillStyle = this.color;
@@ -42,6 +45,7 @@ class Ball {
     ctx.fill();
   }
 
+  // Update method: updates the balls position
   update() {
     if ((this.x + this.size) >= width) {
       this.velX = -(this.velX);
@@ -63,6 +67,7 @@ class Ball {
     this.y += this.velY;
   }
 
+  // Collision detector: determines if a ball has collided with another
   collisionDetect() {
     for (const ball of balls) {
       if (this !== ball) {
@@ -96,6 +101,7 @@ while (balls.length < 25) {
   balls.push(ball);
 }
 
+// Program loop
 function loop() {
   ctx.fillStyle = "rgb(0 0 0 / 25%)";
   ctx.fillRect(0, 0, width, height);
