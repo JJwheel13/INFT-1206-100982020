@@ -13,6 +13,9 @@ const ctx = canvas.getContext("2d");
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
+const para = document.querySelector('p');
+let count = 0;
+
 // function to generate random number
 
 function random(min, max) {
@@ -154,8 +157,8 @@ class Ball extends Shape {
   }
 }
 
-
 const balls = [];
+const evilCircle = new EvilCircle(random(0, width), random(0, height));
 
 while (balls.length < 25) {
   const size = random(10, 20);
@@ -171,6 +174,8 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
+  count++;
+  para.textContent = "Ball Count: " + count;
 }
 
 function loop() {
@@ -178,10 +183,16 @@ function loop() {
   ctx.fillRect(0, 0, width, height);
 
   for (const ball of balls) {
-    ball.draw();
-    ball.update();
-    ball.collisionDetect();
+    if(ball.exists) {
+      ball.draw();
+      ball.update();
+      ball.collisionDetect();
+    }
   }
+
+  evilCircle.draw();
+  evilCircle.checkBounds();
+  evilCircle.collisionDetect();
 
   requestAnimationFrame(loop);
 }
