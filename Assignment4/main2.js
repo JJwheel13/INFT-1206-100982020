@@ -20,7 +20,13 @@ const altImages = {
     "pic5.jpg": "Closeup of a moth"
 }
 
-const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
-thumbBar.appendChild(newImage);
+for(const image of images) {
+    const newImage = document.createElement("img");
+    newImage.setAttribute('src', `images2/${image}`);
+    newImage.setAttribute('alt', altImages[image]);
+    thumbBar.appendChild(newImage);
+    newImage.addEventListener("click", e => {
+        displayedImage.src = e.target.src;
+        displayedImage.alt = e.target.alt;
+    });
+}
