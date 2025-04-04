@@ -28,6 +28,7 @@ function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
+// Shape Class
 class Shape {
   constructor(x, y, velX, velY) {
     this.x = x;
@@ -37,13 +38,16 @@ class Shape {
   }
 }
 
+// EvilCircle Class
 class EvilCircle extends Shape {
   constructor(x, y) {
+    // Retrieve values from the shape class
     super(x, y, 20, 20);
 
     this.color = "white";
     this.size = 10;
 
+    // Implement Event Listener
     window.addEventListener("keydown", (e) =>{ 
       switch(e.key) {
         case "w":
@@ -62,6 +66,7 @@ class EvilCircle extends Shape {
     });
   }
 
+  // Draw the circle onto the canvas
   draw() {
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
@@ -88,6 +93,7 @@ class EvilCircle extends Shape {
     }
   }
 
+  // Detect if an evil circle has collided with a ball object
   collisionDetect() {
     for(const ball of balls) {
       if(ball.exists) {
@@ -105,8 +111,10 @@ class EvilCircle extends Shape {
   }
 }
 
+// Ball class
 class Ball extends Shape {
   constructor(x, y, velX, velY, color, size) {
+    // Retrieve values from the shape class
     super(x, y, velX, velY);
 
     this.color = color;
@@ -114,6 +122,7 @@ class Ball extends Shape {
     this.exists = true;
   }
 
+  // Draw the ball onto the canvas
   draw() {
     ctx.beginPath();
     ctx.fillStyle = this.color;
@@ -121,6 +130,7 @@ class Ball extends Shape {
     ctx.fill();
   }
 
+  // Update the ball onto the canvas
   update() {
     if (this.x + this.size >= width) {
       this.velX = -Math.abs(this.velX);
@@ -142,6 +152,7 @@ class Ball extends Shape {
     this.y += this.velY;
   }
 
+  // Detect if a ball has collided with another
   collisionDetect() {
     for (const ball of balls) {
       if (!(this === ball)) {
@@ -160,6 +171,7 @@ class Ball extends Shape {
 const balls = [];
 const evilCircle = new EvilCircle(random(0, width), random(0, height));
 
+// Fill the canvas with ball objects
 while (balls.length < 25) {
   const size = random(10, 20);
   const ball = new Ball(
@@ -178,6 +190,7 @@ while (balls.length < 25) {
   para.textContent = "Ball Count: " + count;
 }
 
+// Repeatedly update the canvas
 function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
   ctx.fillRect(0, 0, width, height);
@@ -197,4 +210,5 @@ function loop() {
   requestAnimationFrame(loop);
 }
 
+// Initialize the program
 loop();
