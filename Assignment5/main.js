@@ -1,3 +1,10 @@
+/*
+Author: Justin Wheeler (100982020)
+Completion Date: 2025-04-11
+Purpose: To demonstrate the principles of front-end accessibility
+File: main.js
+*/
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
